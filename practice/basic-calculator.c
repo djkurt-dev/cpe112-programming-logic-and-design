@@ -24,8 +24,10 @@ void main() {
     else if(ops == '*') {
         printf("%.2f", num1 * num2);
     }
-    else {
+    else if(ops == '/') {
         printf("%.2f", num1 / num2);
     }
-
+    else {
+        printf("Oops! You have entered an invalid operator.");
+    }
 }
