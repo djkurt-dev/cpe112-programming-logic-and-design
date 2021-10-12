@@ -5,14 +5,13 @@
 void main() { 
     float base, height, area, perimeter, hypotenuse;
 
-    printf("Enter base: ");
+    printf("Enter base and height: ");
     scanf("%f", &base);
 
     printf("Enter Height: ");
     scanf("%f", &height);
 
     area = .5 * base * height;
-    //hypotenuse is computed with pythagorean theorem, using sqrt and pow functions
     hypotenuse = sqrt((pow(base,2)) + (pow(height,2)));
     perimeter = base + height + hypotenuse; 
 
