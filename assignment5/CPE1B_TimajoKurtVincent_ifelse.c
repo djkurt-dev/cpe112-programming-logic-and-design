@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <conio.h>
 #include <math.h>
 #define pi 3.1416
 
@@ -9,10 +10,10 @@ void main () {
 
     menu:
     printf ("Select task of computation: \n\t(a) Right Triangle: Area and Perimeter\n\t(b) Rectangle: Area and Perimeter\n\t(c) Square: Area and Perimeter\n\t(d) Circle: Area and Circumference\n>> ");
-    choice = getc(stdin);
+    choice = getche();
 
     //Right Triangle
-    if(choice == 'a') {
+    if(choice == 'a' || choice == 'A') {
         printf("\n************** Area and Perimeter of a Right Triangle **************\n\n");
         printf("Enter Base: ");
         scanf("%lf", &base);
@@ -29,7 +30,7 @@ void main () {
     }
 
     //Rectangle
-    else if(choice == 'b') {
+    else if(choice == 'b' || choice == 'B') {
         printf("\n************** Area and Perimeter of a Rectangle **************\n\n");
         printf("Enter width of rectangle: ");
         scanf("%lf", &width);
@@ -45,7 +46,7 @@ void main () {
     }
 
     //Square
-    else if(choice == 'c') {
+    else if(choice == 'c' || choice == 'C') {
         printf("\n************** Area and Perimeter of a Square **************\n\n");
         printf("Enter side of the square: ");
         scanf("%lf", &side);
@@ -58,7 +59,7 @@ void main () {
     }
 
     //Circle
-    else if(choice == 'd') {
+    else if(choice == 'd' || choice == 'D') {
         printf("\n************** Area and Circumference of a Circle **************\n\n");
         printf("Enter the radius of the circle: ");
         scanf("%lf", &radius);

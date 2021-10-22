@@ -15,19 +15,22 @@ void main() {
     printf("\nSecond number: ");
     scanf("%f", &num2);
 
-    if(ops == '+' ){
-        printf("%.2f", num1 + num2);
+    char choice = 1;
+    switch(ops) {
+        case '+':
+            printf("%.2f", num1 + num2);
+            break;
+        case '-':
+            printf("%.2f", num1 - num2);
+            break;
+        case '*':
+            printf("%.2f", num1 * num2);
+            break;
+        case '/':
+            printf("%.2f", num1 / num2);
+            break;
+        default:
+            printf("Oops! You have entered an invalid operator.");
     }
-    else if(ops == '-') {
-        printf("%.2f", num1 - num2);
-    }
-    else if(ops == '*') {
-        printf("%.2f", num1 * num2);
-    }
-    else if(ops == '/') {
-        printf("%.2f", num1 / num2);
-    }
-    else {
-        printf("Oops! You have entered an invalid operator.");
-    }
+
 }
