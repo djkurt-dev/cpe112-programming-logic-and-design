@@ -2,32 +2,48 @@
 #include <stdlib.h>
 
 void main() {
-    //2D Arrays 
-    int faveNums[3][2] = {
-        {2,4},
-        {6,9},
-        {8,1}
-    };
-    double mostFave = 8.8;
+// int x , y;
 
-    for(int i=0; i<3; i++) {
-        for(int j=0; j<2; j++) {
-            printf("%d ", faveNums[i][j]);
-        }
-        printf("\n");
-        
-    }
-    printf("%p %p %p", &faveNums, &mostFave, &faveNums[1][1]);
-    
-    // int luckyNumbers[] = { 0, 1, 2, 3, 4,5,6,7};
-    // luckyNumbers[0] =356;
-    // for(int i = 0; i<(sizeof(luckyNumbers)/sizeof(int)); i++) {
-    //     if(luckyNumbers[i] % 2 == 0) {
-    //         printf("%d\n", luckyNumbers[i]);
-    //     }
-    //     else
-    //     {
-    //         continue;
-    //     }        
-    // }
+// for (int x=2 ;  x<=4 ; x++)
+//     {
+// 	for (int y=5 ; y>=3 ; y--)
+// 	 {	
+// 		printf("%d ",x+y); 
+// 	 }
+//     }
+// for (y=1, x = 6; x > 0 ; x--){
+//  y = y* x;
+// }
+          
+// printf("y is equal to %d.",y);
+// int x=1, y=1;
+// for (x=1 ; x<10 ; x++)
+// {
+//     for (y=1 ; y<x ; y++)
+//      {
+// 	printf("-");
+//      }
+//     printf("%d",x); 
+// }
+// int A=13,B=25;
+// if (A-B<=0)
+// 	if (A+B<=0){
+// 		printf("%d ",A+B);}
+// else printf("%d ",A-B);
+// printf("%d ", A+B);
+
+// int x;
+
+// for (x = 1; x < 45 ; x++) 
+//     {
+//           if (x % 9 != 0)   continue;
+//           printf("%d,", x);
+//      }
+
+int num = 2417,w,x,y,z;
+w = num % 10;
+x = (num / 10) % 10;
+y = (num / 100) % 10;
+z = num / 1000;
+printf("%d %d %d %d", w,x,y,z);
 }

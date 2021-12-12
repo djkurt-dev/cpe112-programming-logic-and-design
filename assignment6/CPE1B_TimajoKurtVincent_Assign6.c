@@ -16,11 +16,10 @@ void main() {
             if(x>largest){
                 largest = x;
             }
-        }
-        printf("\nCurrent largest integer: %d", largest);        
+        }                
         printf("\nDo you want to input again? (y/n): ");
         ans = getche();
         i++;
     } while (ans == 'y' || ans == 'Y');
-    
+    printf("\n\nThe largest input integer is %d", largest);
 }
